@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreen"
-    android:background="#2d2d"
+    android:background="#fff"
     >
 
     <ImageView
@@ -29,7 +29,7 @@
         android:fontFamily="@font/bold"
         android:text="Notes"
         android:textAlignment="center"
-        android:textColor="@color/voilet"
+        android:textColor="@color/violet"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,9 +43,9 @@
         android:layout_marginTop="16dp"
         android:text="Just make Notes whatever you thought"
         android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@color/voilet"
-        android:textSize="16dp"
+
+        android:textColor="@color/violet"
+        android:textSize="16sp"
         android:gravity="center"
         android:fontFamily="@font/regular"
         app:layout_constraintEnd_toEndOf="parent"
