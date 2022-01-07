@@ -1,7 +1,10 @@
 package com.example.notesapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import kotlinx.coroutines.delay
 
 class SplashScreen : AppCompatActivity() {
@@ -9,9 +12,11 @@ class SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-//       Handler().postDelayed(Runnable {
-//
-//           startActivity(Intent(packageContext: this,MainActivity::class.java))
-//       })
+        supportActionBar?.hide()
+
+        Handler(Looper.getMainLooper()).postDelayed(Runnable {
+//            code
+            startActivity(Intent(this, MainActivity::class.java ))
+        }, 2000)
     }
 }
